@@ -1,0 +1,342 @@
+/* global style starts here */
+
+@font-face {
+    font-family: myfont;
+    src: url('fonts/BalooDa2-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: myfontRegular;
+    src: url('fonts/BalooDa2-Regular.ttf');
+}
+
+i {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: myfont, sans-serif;
+}
+
+p, a {
+    font-family: myfontRegular, sans-serif;
+}
+
+a {
+	transition: all .5s;
+}
+
+a:hover {
+	color: rgb(75, 75, 221);
+	transform: scale(1.09);
+}
+
+/* global style ends here */
+
+/* header design starts here */
+
+.header-grids {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-nav a {
+	font-size: 1.4rem !important;
+	color: #3498db
+}
+
+/* header design ends here */
+
+/* header bottom starts here */
+
+.header-bottom {
+	background: url('images/header/2.jpg');
+    /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url('./images/header/2.jpg'); */
+	background-size: cover;
+	background-position: bottom;
+	height: 85vh;
+}
+
+.about-me img {
+	width: 35%;
+	clip-path: circle(48% at 51% 50%);
+	margin-bottom: 30px;
+}
+
+.about-me h1 {
+	font-size: 3rem;
+}
+
+.about-me p {
+	color: rgb(31, 31, 31);
+	font-size: 1.6rem;
+}
+
+.social {
+	margin-top: 25px;
+}
+
+.social i {
+	margin: 0 15px;
+	font-size: 1.8rem;
+	color: white;
+}
+
+.social i:hover {
+	color: #2c3e50;
+}
+.about-me button {
+	font-size: 1.5rem;
+	padding: 15px 55px;
+	background: deepskyblue;
+	color: white;
+	border-radius: 30px;
+	transition: all .5s;
+	cursor: pointer;
+}
+
+.about-me button:hover {
+	background: deepskyblue;
+	color: white;
+	transform: scale(.95);
+}
+
+.navbar-icon {
+	display: none;
+	position: absolute;
+	top: 4%;
+	right: 10%;
+	font-size: 1.5rem;
+}
+
+.showAndHideMenu {
+	height: 220px !important;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+/* header bottom ends here */
+
+/* portfolio section starts here */
+
+
+
+/* portfolio filters */
+
+.controls {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+.control {
+	border: none;
+	background: rgba(0,0,0,0.1);
+	padding: 7px 30px;
+	border-radius: 1px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	border: none;
+	outline: none;
+  }
+  .control.mixitup-control-active {
+	background: deepskyblue;
+	color: white;
+  }
+
+/* portfolio filters */
+
+.portfolios .container > h1 {
+	font-size: 3rem;
+	color: #2ecc71;
+}
+
+.portfolios hr {
+	width: 10%;
+	margin: 0 auto
+}
+
+.portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 70px;
+	text-align: center;
+}
+
+.single {
+	-webkit-box-shadow: 0px 5px 40px -4px rgba(196,196,196,1);
+	-moz-box-shadow: 0px 5px 40px -4px rgba(196,196,196,1);
+	box-shadow: 0px 5px 40px -4px rgba(196,196,196,1);
+}
+
+.portfolio .single img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+
+.card-body {
+	background: rgb(255, 255, 255);
+	padding: 30px 0;
+	margin-top: -10px;
+	border-radius: 0 0 11px 11px;
+}
+
+.card-body p {
+	color: #a4a4d2;
+}
+
+footer {
+	background: #000;
+}
+
+footer p {
+	font-size: 1.3rem;
+}
+
+
+/* portfolio section starts here */
+
+
+/* overriding my my framework styles */
+
+.myname {
+	color: #0652DD
+}
+
+.position-center {
+	top: 55% !important;
+}
+
+/* overriding my my framework styles */
+
+
+/* responsvieness starts from here */
+
+/* for screen size 1297 px */
+@media only screen and (max-width: 1297px){
+	.header-bottom {
+		height: 95vh;
+	}
+}
+
+
+/* for screen size 1150px */
+@media only screen and (max-width: 1150px){
+	.portfolio {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+
+	.card-body {
+		padding: 20px 5px;
+	}
+}
+
+
+
+/* for screen size 982px */
+@media only screen and (max-width: 982px){
+	.control {
+		margin: 10px;
+	}
+
+	.header-grids {
+		flex-direction: column;
+		align-items: unset;
+	}
+
+	.navbar-nav .d-flex {
+		flex-direction: column;
+		align-items: unset;
+	}
+
+	header {
+	transition: all .5s;
+	height: 80px !important;
+	}
+
+	.navbar-nav {
+		overflow: hidden;
+	}
+
+	.navbar-icon {
+		display: block;
+		font-size: 1.5rem;
+	}
+
+	.about-me {
+		width: 100% !important;
+	}
+
+	.header-bottom {
+		height: 110vh !important;
+	}
+}
+
+
+/* for screen size 750px */
+@media only screen and (max-width: 750px){
+	.card-body h1 {
+		font-size: 1.2rem !important;
+	}
+
+	.header-bottom {
+		height: 100vh !important;
+	}
+}
+
+
+/* for screen size 650px */
+@media only screen and (max-width: 650px){
+	.portfolio {
+		grid-template-columns: 1fr;
+	}
+
+	.control {
+		font-size: 1rem;
+	}
+
+	header {
+		height: 70px !important;
+	}
+}
+
+
+/* for screen size 400px */
+@media only screen and (max-width: 650px){
+	.navbar-brand {
+		font-size: 1.7rem;
+	}
+
+	.navbar-icon {
+		font-size: 1.4rem;
+	}
+}
+
+
+/* for screen size below 350px */
+@media only screen and (max-width: 560px){
+	.header-bottom {
+		height: 110vh !important;
+	}
+}
+
+
+/* for screen size 560 in height */
+@media only screen and (max-height: 560px){
+	.header-bottom {
+		height: 110vh !important;
+	}
+}
+
+/* for screen size 560 in height */
+@media only screen and (max-height: 540px){
+	.header-bottom {
+		height: 120vh !important;
+	}
+}
+
+
+/* responsvieness ends from here */
