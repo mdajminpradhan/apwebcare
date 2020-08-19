@@ -287,6 +287,22 @@ footer p {
 	}
 }
 
+/* for screen size in 740px in height */
+@media only screen and (max-height: 740px){
+	.header-bottom {
+		height: 100vh !important;
+	}
+}
+
+
+
+/* for screen size in 640px in height */
+@media only screen and (max-height: 640px){
+	.header-bottom {
+		height: 125vh !important;
+	}
+}
+
 
 /* for screen size 650px */
 @media only screen and (max-width: 650px){
@@ -305,7 +321,7 @@ footer p {
 
 
 /* for screen size 400px */
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 400px){
 	.navbar-brand {
 		font-size: 1.7rem;
 	}
