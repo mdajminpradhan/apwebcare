@@ -139,6 +139,8 @@ a:hover {
 	font-size: 1.2rem;
 	border: none;
 	outline: none;
+	border-radius: 30px;
+	margin: 0 5px;
   }
   .control.mixitup-control-active {
 	background: deepskyblue;
